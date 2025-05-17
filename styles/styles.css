@@ -44,6 +44,13 @@
 
 .nav-link-style {
     text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 #nav-search-image {
@@ -177,6 +184,45 @@
 
     border-style: none;
     text-align: center;
+}
+
+.img-container {
+    margin-bottom: 30px;
+}
+
+#img1 {
+    width: 50.64px;
+    height: 25.17px;
+}
+
+#img2 {
+    width: 84px;
+    height: 25.28px;
+}
+
+#img3 {
+    width: 84px;
+    height: 15px;
+}
+
+#img4 {
+    width: 60.11px;
+    height: 20px;
+}
+
+#img5 {
+    width: 50px;
+    height: 19.67px;
+}
+
+#img6 {
+    width: 80.94px;
+    height: 14.7px;
+}
+
+#img7 {
+    width: 63px;
+    height: 30px;
 }
 
 .hero {
