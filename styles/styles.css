@@ -5,6 +5,11 @@
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 100px;
+}
+
+.nav-links {
+    display: flex;
 }
 
 .nav-title {
@@ -21,7 +26,16 @@
     width: 463px;
     height: 36px;
     display: flex;
+    justify-content: start;
+    align-items: center;
     gap: 34px;
+
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+
 }
 
 .nav-link {
@@ -42,18 +56,7 @@
     height: 23.43px;
 }
 
-.banner {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: left;
-    margin-bottom: 274px;
 
-
-}
 
 /*shared style*/
 
@@ -86,26 +89,22 @@
 
 /*...........*/
 
-.prebook {
-    width: 196px;
-    height: 44px;
-    border-radius: 41px;
 
-    background: rgb(224, 44, 109);
-    color: rgb(255, 255, 255);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0px;
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: left;
-    border-style: none;
-    text-align: center;
+    margin-bottom: 274px;
 }
 
 .banner-container {
     width: 100%;
-    width: 582px;
+    max-width: 582px;
     height: 270px;
 
 }
@@ -128,7 +127,9 @@
 .camera-rounded-border {
     border: 3px solid rgb(241, 228, 255);
     width: 475px;
-    height: 475px;
+    aspect-ratio: 1 / 1;
+    /* Ensures width == height */
+    border-radius: 50%;
     border-radius: 300px;
     margin-right: 60px;
     display: flex;
@@ -140,7 +141,8 @@
 
 .camera-rounded-mini-border {
     width: 350px;
-    height: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     border-radius: 175px;
     background-color: rgb(247, 240, 255);
     display: flex;
@@ -149,10 +151,26 @@
 }
 
 .banner-img {
-    width: 440px;
-    height: 414px;
-    margin-right: 50px;
+    width: 90%;
+    height: auto;
+}
 
+
+.prebook {
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    border-style: none;
+    text-align: center;
 }
 
 .disp {
@@ -160,14 +178,18 @@
 }
 
 @media (max-width: 576px) {
+
+
     .nav-bar {
         width: 100%;
-        max-width: 380px;
+        max-width: 350px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .nav-title {
@@ -184,11 +206,19 @@
 
 
         width: 100%;
-        max-width: 380px;
+        max-width: 350px;
+
 
         display: flex;
         justify-content: start;
+
+    }
+
+    .links {
+        display: flex;
+        gap: 10px;
         padding-left: 0px;
+
     }
 
     .nav-link {
@@ -216,4 +246,47 @@
         width: 29px;
         height: 23.43px;
     }
+
+    .banner {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+
+    .banner-container {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .camera-rounded-border {
+        width: 280px;
+        aspect-ratio: 1 / 1;
+
+        margin: 0 auto 30px auto;
+        /* center + spacing below */
+    }
+
+    .camera-rounded-mini-border {
+        width: 200px;
+        aspect-ratio: 1 / 1;
+
+    }
+
+    .banner-img {
+        width: 90%;
+        height: auto;
+    }
+
+
 }

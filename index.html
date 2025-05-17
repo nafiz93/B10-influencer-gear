@@ -11,19 +11,27 @@
 <body>
     <nav class="nav-bar">
         <p class="nav-title">Influencer products</p>
+
         <div class="nav-links">
-            <ul class="links-container">
-                <li class="nav-link"> <a class="nav-link-style" href="">Home</a> </li>
-                <li class="nav-link"> <a class="nav-link-style" href="">Products</a> </li>
-                <li class="nav-link"> <a class="nav-link-style" href="">Sign up</a> </li>
-                <li class="nav-link"> <a class="nav-link-style" href="">LogIn</a> </li>
-                <img id="nav-search-image" src="/images/search-interface-symbol.png" alt="">
-                <img id="nav-cart-image" src="/images/shopping-cart.png" alt="">
-            </ul>
+            <div class="links-container">
+                <ul class="links">
+                    <li class="nav-link"><a class="nav-link-style" href="#">Home</a></li>
+                    <li class="nav-link"><a class="nav-link-style" href="#">Products</a></li>
+                    <li class="nav-link"><a class="nav-link-style" href="#">Sign up</a></li>
+                    <li class="nav-link"><a class="nav-link-style" href="#">LogIn</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <img id="nav-search-image" src="/images/search-interface-symbol.png" alt="search">
+                    <img id="nav-cart-image" src="/images/shopping-cart.png" alt="cart">
+                </div>
+            </div>
+
+            <!-- ✅ move these out of <ul> -->
+
         </div>
     </nav>
 
-    <section class="banner disp">
+    <section class="banner">
         <div class="banner-container">
             <h3 class="shared-title">Start your Journey as
                 Influencer</h3>
